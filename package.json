@@ -1,0 +1,33 @@
+{
+  "name": "gulp-deploy-ssh",
+  "version": "1.0.0",
+  "description": "Gulp plugin to deploy files using SSH with password prompt",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "dependencies": {
+    "gulp-ssh": "^0.6.0",
+    "inquirer": "^3.2.1"
+  },
+  "devDependencies": {
+    "tape": "^4.7.0"
+  },
+  "bugs": {
+    "url": "https://github.com/savelbr/gulp-deploy-ssh/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savelbr/gulp-deploy-ssh.git"
+  },
+  "keywords": [
+    "gulp",
+    "deploy",
+    "ssh",
+    "prompt",
+    "username",
+    "password"
+  ],
+  "author": "Brecht Savelkoul <code@brecht.pm>",
+  "license": "GPL-3.0"
+}
