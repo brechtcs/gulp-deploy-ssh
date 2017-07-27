@@ -12,18 +12,19 @@
 var gulp = require('gulp')
 var deploy = require('gulp-deploy-ssh')
  
-// task to prompt for SSH credentials
+// prompt for SSH credentials
 gulp.task('login:production', deploy.login('example.com'))
  
-// task to deploy files to SSH host
-gulp.task('deploy:production', function () {
+// deploy files to SSH host
+// IMPORTANT: Don't forget to add login task as dependency
+gulp.task('deploy:production', ['login:production'], function () {
     return gulp.src('www/**/*').pipe(deploy['example.com'].dest('/var/www'))
 })
  
 // add as many hosts as needed
 gulp.task('login:test', deploy.login('test.example.com'))
  
-gulp.task('deploy:test', function () {
+gulp.task('deploy:test', ['login:test'], function () {
     return gulp.src('www/**/*').pipe(deploy['test.example.com'].dest('/var/www'))
 })
 ```
