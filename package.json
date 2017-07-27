@@ -14,11 +14,11 @@
     "tape": "^4.7.0"
   },
   "bugs": {
-    "url": "https://github.com/savelbr/gulp-deploy-ssh/issues"
+    "url": "https://github.com/brechtpm/gulp-deploy-ssh/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/savelbr/gulp-deploy-ssh.git"
+    "url": "git+https://github.com/brechtpm/gulp-deploy-ssh.git"
   },
   "keywords": [
     "gulp",
