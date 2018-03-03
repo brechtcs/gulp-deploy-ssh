@@ -2,6 +2,8 @@
 
 > Gulp plugin to deploy files using SSH with password prompt
 
+This plugin covers the narrow use case where you 1) can't use private key authentication, or 2) can't get your username and password through an environment variable, and 3) don't want to hardcode authentication details in your gulpfile. If do want one of these methods instead of a password prompt, just use [`gulp-ssh`](https://github.com/teambition/gulp-ssh) directly.
+
 ## Install
 
 `npm install --save-dev gulp-deploy-ssh`
